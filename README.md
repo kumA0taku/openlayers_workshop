@@ -5,3 +5,7 @@
 <h3 align="center">It can show shapefile from Geoserver</h3>
 
 ![image](https://github.com/kumA0taku/openlayers_workshop/assets/85553410/316ebac8-9553-477b-9f4d-b242adf66c19)
+
+Reference tutorrial: 
+https://youtu.be/WBXO8lkNlvg?si=oHnGi6hw4S5PSKOo
+https://youtu.be/UFcDHg0hRuk?si=Iymj3Alh6De-BG86
