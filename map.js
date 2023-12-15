@@ -9,21 +9,32 @@ var pos = fromLonLat([-0.1961, 52.07769]);
 // });
 // map.addOverlay(popup);
 
-var wmsSource_ne = new ol.source.TileWMS({
-  url: "http://localhost:8080/geoserver/ne/wms",
-  params: {
-    LAYERS:
-      "ne:world, ne:populated_places, ne:disputed_areas, ne:countries, ne:coastlines",
-  },
-  serverType: "geoserver",
-  crossOrigin: "anonymous",
-});
+// var wmsSource_ne = new ol.source.TileWMS({
+//   url: "http://localhost:8080/geoserver/ne/wms",
+//   params: {
+//     LAYERS:
+//       "ne:world, ne:populated_places, ne:disputed_areas, ne:countries, ne:coastlines",
+//   },
+//   serverType: "geoserver",
+//   crossOrigin: "anonymous",
+// });
 // var wmsSource_topp = new ol.source.TileWMS({
 //   url: 'http://localhost:8080/geoserver/topp/wms',
 //   params: {'LAYERS': 'topp:tasmania_state_boundaries, topp:tasmania_roads, topp:states'},
 //   serverType: 'geoserver',
 //   crossOrigin: 'anonymous'
 // })
+
+var wmsSource_ne = new ol.source.TileWMS({
+  url: "http://localhost:8080/geoserver/macro_provinces/wms", //http://localhost:8080/geoserver/macro_provinces/wms
+  params: {
+    LAYERS:
+      "macro_provinces:ang thong, macro_provinces:kalasin"
+  },
+  serverType: "geoserver",
+  crossOrigin: "anonymous",
+});
+
 var map = new ol.Map({
   layers: [
     new ol.layer.Tile({
